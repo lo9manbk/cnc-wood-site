@@ -4,7 +4,7 @@
 */
 const SITE_CONFIG = {
   // اكتب رقم واتساب بصيغة دولية بدون +. مثال الجزائر: 213555000000
-  whatsappNumber: "213669432143",
+  whatsappNumber: "213657465856",
   currency: "دج",
   basePricePerSquareMeter: 12500
 };

@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f0a07" />
+  <meta name="description" content="موقع احترافي لعرض موديلات CNC لنحت الخشب، طلب موديلات مخصصة، وطلب ماكينة CNC كاملة." />
+  <title>CNC Wood Studio | موديلات ونحت خشب بالـ CNC</title>
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="CNC Wood Studio">
+      <span class="brand-mark">C</span>
+      <span>
+        <strong>CNC Wood Studio</strong>
+        <small>موديلات • نحت • ماكينات</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="القائمة الرئيسية">
+      <a href="#models">الموديلات</a>
+      <a href="#idea">فكرة CNC</a>
+      <a href="#ai-studio">AI Studio</a>
+      <a href="#machines">طلب CNC كاملة</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <button class="btn btn-primary header-cta" data-open-order="model">اطلب موديل</button>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-orbit" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">نحوّل الفكرة إلى خشب منحوت بدقة</p>
+        <h1>موقع فاخر لبيع موديلات CNC وطلب ماكينات نحت الخشب كاملة.</h1>
+        <p class="hero-text">اعرض موديلات جاهزة، استقبل طلبات تصميم خاصة، واجعل العميل يختار ماكينة CNC كاملة حسب مساحة العمل، نوع السبندل، والميزانية.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#models">تصفح الموديلات</a>
+          <button class="btn btn-ghost" data-open-order="machine">اطلب CNC كاملة</button>
+        </div>
+        <div class="trust-row" aria-label="مميزات الخدمة">
+          <span>ملفات STL / DXF</span>
+          <span>تصميم حسب المقاس</span>
+          <span>استشارة ماكينة كاملة</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="تصميم CNC خشب ثلاثي الأبعاد">
+        <div class="wood-card main-card tilt-card">
+          <div class="cnc-head">
+            <span></span>
+            <i></i>
+          </div>
+          <svg viewBox="0 0 520 420" role="img" aria-label="لوحة خشب منقوشة">
+            <defs>
+              <linearGradient id="woodHero" x1="0" x2="1">
+                <stop offset="0" stop-color="#8a4e21" />
+                <stop offset=".5" stop-color="#d09754" />
+                <stop offset="1" stop-color="#5f3518" />
+              </linearGradient>
+              <radialGradient id="carveGlow" cx="50%" cy="50%" r="60%">
+                <stop offset="0" stop-color="#fff1c2" stop-opacity=".7" />
+                <stop offset="1" stop-color="#000" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <rect x="40" y="50" width="440" height="310" rx="34" fill="url(#woodHero)" />
+            <rect x="65" y="75" width="390" height="260" rx="24" fill="none" stroke="#3a1c0b" stroke-width="10" opacity=".42" />
+            <circle cx="260" cy="205" r="102" fill="url(#carveGlow)" opacity=".8" />
+            <g fill="none" stroke="#2b1308" stroke-width="8" stroke-linecap="round" opacity=".72">
+              <path d="M260 105c32 42 32 158 0 200" />
+              <path d="M160 205c42-32 158-32 200 0" />
+              <path d="M190 135c70 10 130 70 140 140" />
+              <path d="M330 135c-70 10-130 70-140 140" />
+              <path d="M185 305c14-64 86-100 150-74" />
+              <path d="M335 105c-14 64-86 100-150 74" />
+            </g>
+            <g fill="#351707" opacity=".72">
+              <circle cx="260" cy="205" r="18" />
+              <circle cx="260" cy="112" r="11" />
+              <circle cx="260" cy="298" r="11" />
+              <circle cx="167" cy="205" r="11" />
+              <circle cx="353" cy="205" r="11" />
+            </g>
+          </svg>
+          <div class="live-chip">AI Toolpath Preview</div>
+        </div>
+
+        <div class="floating-panel stats-panel">
+          <span>دقة المسار</span>
+          <strong>0.05mm</strong>
+          <small>محاكاة قبل النحت</small>
+        </div>
+        <div class="floating-panel file-panel">
+          <span>ملفات جاهزة</span>
+          <strong>STL • DXF • G-Code</strong>
+          <small>حسب الطلب</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad metrics reveal" aria-label="أرقام الخدمة">
+      <article><strong data-count="128">0</strong><span>موديل قابل للتخصيص</span></article>
+      <article><strong data-count="18">0</strong><span>تصنيف نقش خشبي</span></article>
+      <article><strong data-count="3">0</strong><span>باقات CNC كاملة</span></article>
+      <article><strong data-count="24">0</strong><span>ساعة لاستلام الطلبات</span></article>
+    </section>
+
+    <section class="section-pad" id="models">
+      <div class="section-head reveal">
+        <p class="eyebrow">معرض الموديلات</p>
+        <h2>موديلات CNC خشب جاهزة للعرض والطلب.</h2>
+        <p>فلترة ذكية حسب نوع العمل. يمكن للعميل طلب الموديل كما هو أو تخصيص المقاس والاسم والتفاصيل.</p>
+      </div>
+
+      <div class="filters reveal" role="list" aria-label="تصنيفات الموديلات">
+        <button class="filter active" data-filter="all">الكل</button>
+        <button class="filter" data-filter="doors">أبواب</button>
+        <button class="filter" data-filter="panels">لوحات</button>
+        <button class="filter" data-filter="arabesque">أرابيسك</button>
+        <button class="filter" data-filter="furniture">أثاث</button>
+        <button class="filter" data-filter="signs">لافتات</button>
+      </div>
+
+      <div class="models-grid reveal" id="modelsGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="idea section-pad" id="idea">
+      <div class="section-head reveal">
+        <p class="eyebrow">فكرة CNC</p>
+        <h2>كيف تتحول الرسمة إلى قطعة خشب منحوتة؟</h2>
+      </div>
+      <div class="process-grid reveal">
+        <article>
+          <span>01</span>
+          <h3>اختيار الفكرة</h3>
+          <p>العميل يختار موديلًا جاهزًا أو يرسل صورة/رسمًا/وصفًا. نحدد المقاس، العمق، ونوع الخشب.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>تحويل AI + CAD/CAM</h3>
+          <p>يتم تجهيز موديل ثلاثي الأبعاد أو DXF، ثم إنشاء مسارات القطع، اختيار البنطة، ومحاكاة النتيجة.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>النحت والتشطيب</h3>
+          <p>تنفذ ماكينة CNC النحت بدقة، ثم يتم الصنفرة، الطلاء، الورنيش، أو التشطيب حسب الطلب.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad ai-studio" id="ai-studio">
+      <div class="section-head reveal">
+        <p class="eyebrow">AI Studio</p>
+        <h2>مساعد ذكي لصياغة طلب الموديل وتقدير التكلفة.</h2>
+        <p>لا يحتاج إلى سيرفر. يعطي العميل برومبت احترافي ووصف طلب جاهز للإرسال. يمكن ربطه لاحقًا بـ OpenAI API من خلال Backend آمن.</p>
+      </div>
+
+      <div class="studio-grid reveal">
+        <form class="ai-card" id="promptForm">
+          <h3>مولّد فكرة موديل</h3>
+          <label>
+            نوع القطعة
+            <select name="pieceType">
+              <option>باب خشبي فاخر</option>
+              <option>لوحة جدارية ثلاثية الأبعاد</option>
+              <option>واجهة أثاث / خزانة</option>
+              <option>لافتة محل محفورة</option>
+              <option>زخرفة أرابيسك</option>
+            </select>
+          </label>
+          <label>
+            الطابع الفني
+            <select name="styleType">
+              <option>أندلسي فاخر</option>
+              <option>إسلامي هندسي</option>
+              <option>مودرن Minimal</option>
+              <option>كلاسيكي ملكي</option>
+              <option>طبيعة وأوراق نباتية</option>
+            </select>
+          </label>
+          <label>
+            المقاس التقريبي
+            <input name="size" type="text" placeholder="مثال: 120×80 سم" />
+          </label>
+          <label>
+            تفاصيل إضافية
+            <textarea name="details" rows="4" placeholder="اسم، شعار، آية، عمق النحت، نوع الخشب..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">أنشئ برومبت احترافي</button>
+        </form>
+
+        <div class="ai-output" id="promptOutput">
+          <div class="output-empty">
+            <span>✦</span>
+            <p>املأ الخيارات وسيظهر هنا وصف احترافي يصلح للمصمم أو للذكاء الاصطناعي.</p>
+          </div>
+        </div>
+
+        <form class="ai-card estimate-card" id="estimateForm">
+          <h3>حاسبة تقديرية</h3>
+          <div class="two-cols">
+            <label>العرض سم<input name="width" type="number" min="10" value="80" /></label>
+            <label>الطول سم<input name="height" type="number" min="10" value="120" /></label>
+          </div>
+          <label>
+            درجة التفاصيل
+            <select name="complexity">
+              <option value="1">بسيط</option>
+              <option value="1.45" selected>متوسط</option>
+              <option value="2.1">عالي التفاصيل</option>
+              <option value="2.8">ملكي / ثلاثي الأبعاد عميق</option>
+            </select>
+          </label>
+          <label>
+            التشطيب
+            <select name="finish">
+              <option value="1">بدون تشطيب</option>
+              <option value="1.25">صنفرة ناعمة</option>
+              <option value="1.55">طلاء / ورنيش</option>
+              <option value="1.9">تشطيب فاخر</option>
+            </select>
+          </label>
+          <button class="btn btn-ghost" type="submit">احسب تقديريًا</button>
+          <p class="estimate-result" id="estimateResult">—</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-pad machines" id="machines">
+      <div class="section-head reveal">
+        <p class="eyebrow">طلب CNC كاملة</p>
+        <h2>اختر باقة ماكينة تناسب ورشتك.</h2>
+        <p>القسم مصمم لاستقبال طلبات شراء ماكينة كاملة: هيكل، سبندل، كنترولر، طاولة، تدريب، وملفات اختبار.</p>
+      </div>
+
+      <div class="machines-grid reveal">
+        <article class="machine-card tilt-card" data-machine="Starter 6040">
+          <span class="machine-tag">بداية احترافية</span>
+          <h3>Starter 6040</h3>
+          <p>للنماذج الصغيرة، اللافتات، والتجارب التعليمية.</p>
+          <ul>
+            <li>مساحة عمل 60×40 سم</li>
+            <li>سبندل 1.5kW</li>
+            <li>خشب، MDF، أكريليك</li>
+          </ul>
+          <button class="btn btn-ghost" data-open-order="machine" data-package="Starter 6040">اطلب عرض سعر</button>
+        </article>
+
+        <article class="machine-card featured tilt-card" data-machine="Pro 1325">
+          <span class="machine-tag">الأكثر طلبًا</span>
+          <h3>Pro 1325</h3>
+          <p>حل ممتاز للورش التي تصنع الأبواب والديكور والأثاث.</p>
+          <ul>
+            <li>مساحة عمل 130×250 سم</li>
+            <li>سبندل 3.2kW / 4.5kW</li>
+            <li>طاولة فاكيوم اختيارية</li>
+          </ul>
+          <button class="btn btn-primary" data-open-order="machine" data-package="Pro 1325">ابدأ طلب الماكينة</button>
+        </article>
+
+        <article class="machine-card tilt-card" data-machine="Industrial 2030">
+          <span class="machine-tag">إنتاج ثقيل</span>
+          <h3>Industrial 2030</h3>
+          <p>للمصانع، الإنتاج المتكرر، والقطع الكبيرة عالية الدقة.</p>
+          <ul>
+            <li>مساحة عمل 200×300 سم</li>
+            <li>هيكل ثقيل ملحوم</li>
+            <li>ATC اختياري</li>
+          </ul>
+          <button class="btn btn-ghost" data-open-order="machine" data-package="Industrial 2030">اطلب مواصفات كاملة</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad split-cta reveal">
+      <div>
+        <p class="eyebrow">جاهز للبيع</p>
+        <h2>اجعل الموقع يستقبل طلبات حقيقية من اليوم.</h2>
+        <p>غيّر رقم الواتساب في ملف script.js، وعدّل الأسعار والصور، ثم ارفعه على أي استضافة مثل Netlify أو Hostinger أو GitHub Pages.</p>
+      </div>
+      <div class="cta-actions">
+        <button class="btn btn-primary" data-open-order="model">طلب موديل خاص</button>
+        <button class="btn btn-ghost" data-open-order="machine">طلب CNC كاملة</button>
+      </div>
+    </section>
+
+    <section class="section-pad contact" id="contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">تواصل وطلبات</p>
+        <h2>نموذج سريع للطلبات العامة.</h2>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="two-cols">
+          <label>الاسم<input name="name" required type="text" placeholder="اسمك" /></label>
+          <label>رقم الهاتف<input name="phone" required type="tel" placeholder="+213 ..." /></label>
+        </div>
+        <label>نوع الطلب
+          <select name="requestType">
+            <option>طلب موديل CNC</option>
+            <option>طلب ماكينة CNC كاملة</option>
+            <option>استفسار سعر</option>
+            <option>شراكة / بيع موديلات</option>
+          </select>
+        </label>
+        <label>الرسالة<textarea name="message" rows="5" placeholder="اكتب تفاصيل طلبك..."></textarea></label>
+        <button class="btn btn-primary" type="submit">إرسال الطلب</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top">
+      <span class="brand-mark">C</span>
+      <span><strong>CNC Wood Studio</strong><small>Precision carved in wood</small></span>
+    </a>
+    <p>© <span id="year"></span> جميع الحقوق محفوظة. صُمم لبيع موديلات وخدمات CNC.</p>
+    <a href="#top">العودة للأعلى ↑</a>
+  </footer>
+
+  <dialog class="order-dialog" id="orderDialog" aria-labelledby="dialogTitle">
+    <form method="dialog" class="dialog-shell">
+      <button class="dialog-close" value="close" aria-label="إغلاق">×</button>
+      <div class="dialog-head">
+        <p class="eyebrow" id="dialogEyebrow">طلب جديد</p>
+        <h2 id="dialogTitle">أرسل تفاصيل طلبك</h2>
+      </div>
+
+      <div id="modelOrder" class="dialog-panel">
+        <div class="two-cols">
+          <label>الاسم<input name="modelName" type="text" placeholder="اسم العميل" /></label>
+          <label>الهاتف<input name="modelPhone" type="tel" placeholder="+213 ..." /></label>
+        </div>
+        <label>الموديل المطلوب<input name="selectedModel" id="selectedModel" type="text" placeholder="اسم الموديل" /></label>
+        <div class="two-cols">
+          <label>المقاس<input name="modelSize" type="text" placeholder="مثال: 80×120 سم" /></label>
+          <label>صيغة الملف
+            <select name="fileFormat">
+              <option>STL ثلاثي الأبعاد</option>
+              <option>DXF للقص/النقش</option>
+              <option>G-Code جاهز</option>
+              <option>موديل + مسارات CAM</option>
+            </select>
+          </label>
+        </div>
+        <label>تفاصيل التصميم<textarea name="modelDetails" rows="4" placeholder="زخرفة، عمق النحت، اسم، شعار، نوع الخشب..."></textarea></label>
+        <button class="btn btn-primary submit-order" data-order-submit="model" type="button">تجهيز رسالة الطلب</button>
+      </div>
+
+      <div id="machineOrder" class="dialog-panel hidden">
+        <div class="two-cols">
+          <label>الاسم<input name="machineName" type="text" placeholder="اسم العميل" /></label>
+          <label>الهاتف<input name="machinePhone" type="tel" placeholder="+213 ..." /></label>
+        </div>
+        <label>الباقة/المقاس المطلوب<input name="machinePackage" id="machinePackage" type="text" placeholder="مثال: Pro 1325" /></label>
+        <div class="two-cols">
+          <label>مواد العمل
+            <select name="material">
+              <option>خشب و MDF</option>
+              <option>خشب + أكريليك</option>
+              <option>ألمنيوم خفيف</option>
+              <option>إنتاج متعدد المواد</option>
+            </select>
+          </label>
+          <label>الميزانية التقريبية<input name="budget" type="text" placeholder="مثال: 5000$" /></label>
+        </div>
+        <label>المواصفات المطلوبة<textarea name="machineDetails" rows="4" placeholder="مساحة العمل، قوة السبندل، فاكيوم، ATC، تدريب، تركيب..."></textarea></label>
+        <button class="btn btn-primary submit-order" data-order-submit="machine" type="button">تجهيز رسالة الطلب</button>
+      </div>
+
+      <div class="order-summary hidden" id="orderSummary">
+        <h3>ملخص الرسالة</h3>
+        <pre id="summaryText"></pre>
+        <div class="summary-actions">
+          <button class="btn btn-primary" type="button" id="copySummary">نسخ الرسالة</button>
+          <a class="btn btn-ghost" id="whatsappLink" href="#" target="_blank" rel="noopener">فتح واتساب</a>
+        </div>
+        <small>عدّل رقم واتساب صاحب الموقع من أعلى ملف script.js.</small>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

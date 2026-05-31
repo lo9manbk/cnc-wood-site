@@ -1,62 +1,61 @@
-# CNC Wood Studio
+# CNC Wood Site
 
-موقع عربي جاهز لعرض موديلات CNC لنحت الخشب واستقبال طلبات:
+A modern website for showcasing CNC wood carving and woodworking projects.
 
-- موديلات CNC جاهزة أو مخصصة.
-- ملفات STL / DXF / G-Code.
-- ماكينة CNC كاملة حسب الباقة والمواصفات.
-- مساعد AI Studio داخل المتصفح لصياغة وصف/برومبت احترافي.
-- حاسبة سعر تقديرية.
-- تصميم Responsive يدعم الهاتف والكمبيوتر.
+## Features
 
-## طريقة التشغيل
+- Responsive design
+- Modern user interface
+- Project showcase section
+- Services section
+- Contact section
+- Fast and lightweight
 
-افتح ملف `index.html` مباشرة في المتصفح.
+## Technologies Used
 
-## تعديل رقم واتساب
+- HTML
+- CSS
+- JavaScript
 
-افتح ملف `script.js` وعدّل:
+## Installation
 
-```js
-const SITE_CONFIG = {
-  whatsappNumber: "213555000000",
-  currency: "دج",
-  basePricePerSquareMeter: 12500
-};
+Clone the repository:
+
+```bash
+git clone https://github.com/lo9manbk/cnc-wood-site.git
 ```
 
-اكتب رقمك بصيغة دولية بدون علامة `+`.
+Open the project folder:
 
-## تعديل الأسعار
-
-غيّر `basePricePerSquareMeter` داخل `script.js` حسب تسعيرك.
-
-## إضافة موديلات جديدة
-
-في ملف `script.js`، أضف عنصرًا جديدًا داخل مصفوفة `models`:
-
-```js
-{ title: "اسم الموديل", category: "doors", categoryName: "أبواب", description: "الوصف", tags: ["STL", "3D"] }
+```bash
+cd cnc-wood-site
 ```
 
-التصنيفات المتاحة: `doors`, `panels`, `arabesque`, `furniture`, `signs`.
+Then open `index.html` in your browser.
 
-## ربط AI حقيقي
+## Project Structure
 
-الموقع الحالي لا يضع مفتاح OpenAI داخل المتصفح حفاظًا على الأمان. لربط AI حقيقي:
+```text
+cnc-wood-site/
+│
+├── index.html
+├── css/
+├── js/
+├── images/
+└── README.md
+```
 
-1. أنشئ Backend صغير Node.js أو Python.
-2. خزّن مفتاح API في متغيرات البيئة.
-3. اجعل `AI Studio` يرسل البيانات للـ Backend.
-4. الـ Backend يستدعي نموذج AI ثم يرجع النتيجة للموقع.
+## Preview
 
-## النشر
+This website is designed to present CNC woodworking services, custom designs, and finished projects in a professional way.
 
-يمكن رفع الملفات كما هي على:
+## Author
 
-- Netlify
-- Vercel
-- GitHub Pages
-- Hostinger / cPanel
+Briki Lokman
 
-ارفع الملفات الثلاثة الأساسية: `index.html`, `styles.css`, `script.js`.
+GitHub:
+https://github.com/lo9manbk
+
+## License
+
+This project is available for personal and educational use.
